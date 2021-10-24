@@ -5,6 +5,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
+
 def get_html(url, page):
     src = requests.get(url, headers=headers).text
     with open(f'data/index_{page}.html', 'w', encoding='utf-8') as file:
